@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  margin: 0 auto;
+  font-family: 'ProximaNova', 'Arial', sans-serif;
+  margin-top: 30px;
+}
+
+.app-container2 {
+  max-width: 1230px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 1165px;
+}
+
+button {
+  background-color: transparent;
+  padding: 9px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+#address {
+  flex-grow: 1;
+  margin: 0 8px;
+  padding: 17px;
+  border-radius: 15px;
+  border: none;
+}
+
+.facility-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.facility-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: calc(50% - 7px);
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  padding: 10px;
+  margin: 0 0 15px 0;
+  min-height: 280px; 
+}
+
+.facility-name-box {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  background-color: #B0B0B0;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 4px;
+  padding: 0 10px;
+}
+
+.facility-name {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+.facility-address {
+  margin-top: 40px;
+}
+
+.facility-capacity,
+.facility-phone,
+.facility-contact-person,
+.facility-distance, 
+.facility-address {
+  color: #B0B0B0;
+  text-align: left;
+  padding-bottom: 14px;
+}
+
+.city-button {
+  background-color: #E6E6E6; 
+  border: none;
+  color: #757575;
+  padding: 3px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px 0px 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+
+.city-button:hover { 
+  background-color: #4C9739; 
+  color: white; 
+}
+
+.keyword {
+  font-weight: 549; 
+  color: #333; 
+}
+
+@media (max-width: 600px) {
+  .app-container,
+  .app-container2 {
+    margin-top: 20px;
+  }
+
+  .button-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    flex-wrap: wrap; 
+  }
+
+  #address {
+    width: 60%;
+    margin: 8px auto;
+  }
+
+  .facility-details {
+    flex-direction: column;
+  }
+
+  .facility-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .city-button {
+    padding: 2px 10px; 
+    font-size: 14px; 
+    margin: 1px 2px;
+  }
+
+  h3 {
+    font-size: 16px; 
+  }
+}

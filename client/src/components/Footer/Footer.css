@@ -1,0 +1,178 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2937;
+  color: white;
+  padding: 50px;
+  margin-top: 30px;
+  text-align: left;
+  position: relative; 
+  letter-spacing: 0.5px;
+}
+
+.quick-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.quick-links ul li {
+  margin-bottom: 8px; 
+}
+
+.quick-links {
+  text-align: left; 
+}
+
+.quick-links ul li a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.subscribe-form label {
+  display: block;
+  margin-top: -21px; 
+}
+
+.input-group {
+  display: block;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.input-group button {
+  background-color: #4c9739;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px; 
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.input-group button:hover {
+  background-color: darkgreen;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons .icon {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.rights {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+.footer > div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer .contact-info {
+  margin-top: -21px; 
+}
+
+.footer .quick-links {
+  margin-top: -21px; 
+
+}
+
+.footer .follow-us {
+  margin-top: -21px; 
+}
+
+.Phone-icon {
+  height: 16px;
+  width: 18px;
+}
+
+.Location-icon {
+  height: 15px;
+  width: 18px;
+  padding-right: 6px;
+}
+
+.Social-icon {
+  height: 35px;
+  width: 35px;
+  margin-right: 8px; 
+}
+
+.message {
+  text-align: center;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 20px;
+    font-size: 12px; 
+    min-height: 200px; 
+    margin-top: 0px;
+  }
+
+  .quick-links,
+  .subscribe-form,
+  .social-icons,
+  .rights,
+  .footer > div {
+    flex: 1 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .input-group button {
+    margin-top: 5px;
+  }
+
+  .input-group input::placeholder {
+    font-size: 10px; 
+  }
+
+  .Social-icon {
+    height: 25px; 
+    width: 25px; 
+  }
+
+  .rights {
+    font-size: 10px; 
+    padding: 5px; 
+  }
+
+  .Phone-icon,
+  .Location-icon{
+    height: 15px; 
+    width: 15px; 
+  }
+
+  .message {
+    font-size: 12px; 
+  }
+
+  .footer .subscribe-form {
+    margin-top: 0; 
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+}
